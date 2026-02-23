@@ -1,107 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pet101 Solution | PET Blowing Machine Services India</title>
+<title>Pet101 Solution | Industrial PET Service Experts</title>
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-}
-
-header {
-    background: #ffffff;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #eee;
-}
-
-header img {
-    max-width: 250px;
-}
-
-nav {
     background-color: #111;
-    padding: 15px;
+    color: #fff;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 15px 0;
     text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid #f9a825;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 25px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
     color: #f9a825;
 }
 
+/* ===== HEADER ===== */
+header {
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 80px;
+    background: linear-gradient(to right, #000000, #1c1c1c);
+}
+
+header img {
+    max-width: 220px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f9a825;
+}
+
+header p {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* ===== SECTIONS ===== */
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
+.section-dark {
+    background-color: #1a1a1a;
+}
+
 .card {
-    background: white;
-    padding: 30px;
-    margin: 20px auto;
-    width: 90%;
+    background-color: #222;
+    padding: 40px;
+    margin: 30px auto;
     max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    border: 1px solid #333;
 }
 
 h2 {
-    color: #203a43;
+    color: #f9a825;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
 ul {
     text-align: left;
     max-width: 700px;
     margin: auto;
-    line-height: 1.8;
+    line-height: 2;
+    font-size: 16px;
 }
 
+/* ===== FORM ===== */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     max-width: 600px;
     margin: auto;
 }
 
 input, textarea {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    padding: 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
 }
 
 button {
     padding: 14px;
     background-color: #f9a825;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #d48806;
 }
 
+/* ===== FOOTER ===== */
 footer {
-    background-color: #111;
-    color: white;
-    padding: 20px;
+    background-color: #000;
+    padding: 30px;
     text-align: center;
+    border-top: 2px solid #f9a825;
+    font-size: 14px;
 }
 
+/* ===== WHATSAPP ===== */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -111,68 +152,74 @@ footer {
     padding: 15px;
     border-radius: 50%;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<img src="logo.png" alt="Pet101 Solution Logo">
-</header>
-
 <nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+<a href="#about">ABOUT</a>
+<a href="#services">SERVICES</a>
+<a href="#contact">CONTACT</a>
 </nav>
 
-<section id="about">
-<h2>About Pet101 Solution</h2>
+<header>
+<img src="logo.png" alt="Pet 101 Solution">
+<h1>Industrial PET Blowing Machine Services</h1>
+<p>Mumbai Based | PAN India Technical Support</p>
+</header>
+
+<section id="about" class="section-dark">
+<h2>ABOUT PET101 SOLUTION</h2>
 <div class="card">
 <p>
-Mumbai-based PET blowing machine service experts providing installation,
-maintenance, repair and technical support across India.
-We help manufacturers reduce downtime and improve production efficiency.
+Pet101 Solution is a Mumbai-based industrial service provider specializing in
+PET blowing machine installation, maintenance, troubleshooting, and plant support.
+We help bottle manufacturers reduce downtime and maximize production efficiency.
 </p>
 </div>
 </section>
 
 <section id="services">
-<h2>Our Services</h2>
+<h2>OUR SERVICES</h2>
 <div class="card">
 <ul>
-<li>✔ PET Blowing Machine Installation</li>
-<li>✔ Breakdown Repair</li>
-<li>✔ Preventive Maintenance (AMC)</li>
-<li>✔ Electrical & Mechanical Troubleshooting</li>
-<li>✔ Production Line Optimization</li>
-<li>✔ Technical Consultancy</li>
+<li>✔ Automatic & Semi-Automatic Machine Installation</li>
+<li>✔ Emergency Breakdown Repair</li>
+<li>✔ Preventive Maintenance Contracts (AMC)</li>
+<li>✔ Electrical & Mechanical Fault Diagnosis</li>
+<li>✔ Air Leakage & Heating System Optimization</li>
+<li>✔ Production Efficiency Improvement</li>
 </ul>
 </div>
 </section>
 
-<section id="contact">
-<h2>Send Inquiry</h2>
-
+<section id="contact" class="section-dark">
+<h2>REQUEST SERVICE</h2>
 <div class="card">
-<form action="https://formsubmit.co/pet101solution@gmail.com" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
+<form action="https://formsubmit.co/pet101soltuion@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Company / Person Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
 <input type="text" name="phone" placeholder="Phone Number" required>
-<textarea name="message" rows="5" placeholder="Describe your requirement..." required></textarea>
-<button type="submit">Submit Inquiry</button>
+<textarea name="message" rows="5" placeholder="Describe your machine issue or requirement..." required></textarea>
+<button type="submit">SUBMIT INQUIRY</button>
 </form>
-</div>
 
+<br><br>
+
+<p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+<p><strong>Service Coverage:</strong> Across India</p>
+</div>
 </section>
 
 <footer>
-© 2026 Pet101 Solution | Mumbai, India | All Rights Reserved
+© 2026 Pet101 Solution | Industrial Service Experts | India
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919876543210" target="_blank">💬</a>
 
 </body>
 </html>
+
